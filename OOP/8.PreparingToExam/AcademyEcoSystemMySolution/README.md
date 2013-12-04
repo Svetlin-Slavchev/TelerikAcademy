@@ -69,7 +69,7 @@ o	Format: birth lion <name> <position> - creates a Lion at the specified positio
 *	Implement a command to create a Zombie. The Zombie should be an animal and should not be able to eat. When a carnivore (of the so-far existing) tries to eat a Zombie, it should always succeed and receive 10 meat from the Zombie. However, the Zombie should never die. 
    *	Format: birth zombie <name> <position> - creates a zombie with the specified name at the specified position
    *	Example: birth zombie Joro (0,0) – creates a zombie named Joro at the coordinates (0,0)
-   *	
+
 ### Input and Output Data
 
 You should not concern yourself with handling input and output data – the engine does it for you. You should only consider how to implement the required creation commands. See the existing Engine code for hints. Also:
