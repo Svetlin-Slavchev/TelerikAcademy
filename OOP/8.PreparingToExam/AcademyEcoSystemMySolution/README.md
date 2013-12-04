@@ -28,7 +28,7 @@ These are the API’s classes and structures:
 *	'Tree' and 'Bush' – plants with a predefined size 
 *	'Deer' – animal class, implementation of the IHerbivore interface. Does not change in any way when eating.
 *	'Engine' – handles commands and executes them on the simulation world, keeps several lists of the objects in it, provides methods for adding objects and removes dead objects after each "go" command
-*	
+
 ### Commands
 
 There are two types of commands the Engine supports:	
