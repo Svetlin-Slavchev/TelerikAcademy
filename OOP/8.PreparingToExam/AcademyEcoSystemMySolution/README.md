@@ -13,9 +13,8 @@ There are some simple rules the simulation API supports:
 *	Objects can sleep
 *	Some objects change their size when eating or sleeping
 The following lines will help you better understand the API.
-Important Classes and Interfaces
 
-==
+### Important Classes and Interfaces
 
 These are the API’s interfaces:
 * 'IOrganism' – provides base properties and methods, supported by all organisms – IsAlive, Location, Size
@@ -29,7 +28,9 @@ These are the API’s classes and structures:
 *	'Tree' and 'Bush' – plants with a predefined size 
 *	'Deer' – animal class, implementation of the IHerbivore interface. Does not change in any way when eating.
 *	'Engine' – handles commands and executes them on the simulation world, keeps several lists of the objects in it, provides methods for adding objects and removes dead objects after each "go" command
+*	
 ### Commands
+
 There are two types of commands the Engine supports:	
 *	Organism 'birth' command – creates an object in the world
    *	Format: birth <object-type-name> <object-parameters…>
@@ -50,7 +51,9 @@ Here is a list of all commands the Engine supports currently:
 *	go <name> coordinates – moves the animal with the specified name to the specified coordinates, updates all objects with the elapsed time (calculated by Manhattan distance from the object position to the object destination) and checks for encounters
 The Engine handles all listed commands and you shouldn’t write your own parsing code for these commands.
 Study the aforementioned classes to get a better understanding of how they work and how the Engine class handles the listed commands.
+
 ### Tasks
+
 You are tasked with extending the API by implementing several commands and object types. You are not allowed to edit any existing class from the original code of the API. You are not allowed to edit the Main method. You are allowed to edit the GetEngineInstance() method.
 *	Implement a command to create a Wolf. The Wolf should be an animal and should have a Size of 4. The Wolf should be able to eat any animal smaller than or as big as him, or any animal which is sleeping.
    *	Format: birth wolf <name> <position> - creates a Wolf at the specified position with the specified name
@@ -66,7 +69,9 @@ o	Format: birth lion <name> <position> - creates a Lion at the specified positio
 *	Implement a command to create a Zombie. The Zombie should be an animal and should not be able to eat. When a carnivore (of the so-far existing) tries to eat a Zombie, it should always succeed and receive 10 meat from the Zombie. However, the Zombie should never die. 
    *	Format: birth zombie <name> <position> - creates a zombie with the specified name at the specified position
    *	Example: birth zombie Joro (0,0) – creates a zombie named Joro at the coordinates (0,0)
+   *	
 ### Input and Output Data
+
 You should not concern yourself with handling input and output data – the engine does it for you. You should only consider how to implement the required creation commands. See the existing Engine code for hints. Also:
 *	The names in the commands will always consist of upper and lowercase English letters only. The numbers in the commands will always be 32-bit signed integers (System.Int32).
 *	There will never be two plants at the same position, nor two organisms with the same names.
