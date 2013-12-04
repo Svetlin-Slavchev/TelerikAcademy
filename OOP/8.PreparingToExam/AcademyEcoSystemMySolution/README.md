@@ -13,7 +13,8 @@ There are some simple rules the simulation API supports:
 *	Objects can sleep
 *	Some objects change their size when eating or sleeping
 The following lines will help you better understand the API.
-### Important Classes and Interfaces
+Important Classes and Interfaces
+==
 These are the API’s interfaces:
 * 'IOrganism' – provides base properties and methods, supported by all organisms – IsAlive, Location, Size
 *	'IHerbivore' – represents a plant-eater and provides a method EatPlant(Plant), which is called when the object encounters other objects. Eating a plant could reduce its size or kill it. Note: The proper way to implement the EatPlant method is to call the passed plant's GetEatenQuantity(int). EatPlant must also return the eaten quantity.
