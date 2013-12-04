@@ -2,21 +2,21 @@ Problem 2 – Ecosystem Simulation API
 ==================================
 You are given an ecosystem simulation API that gives the base for creating organisms, moving organisms and handling encounters between organisms. The API includes an engine, which controls the simulation world and executes commands on the objects within it. You are also given a C# file, which has a Main method and uses the API for processing commands from the input.
 There are some simple rules the simulation API supports:
-    *	Objects can be created anywhere
-    *	There are 3 major types of objects – carnivores (meat-eaters), herbivores (plant-eaters) and plants
-         *	carnivores can eat herbivores and other carnivores
-         *	herbivores can eat plants
-    *	Objects can go anywhere if they support the "go" command
-         *	Only one object can move at a time
-         *	When one object moves, all objects (including the moving one) get "updated" with the time required for the moving object to travel (the time is determined by the Manhattan distance between the start and end positions).
-         *	When the moved object gets to a position where other objects are located, it "encounters" all of them – it tries to eat them, according to the rules above
-    *	Objects can sleep
-    *	Some objects change their size when eating or sleeping
+*	Objects can be created anywhere
+*	There are 3 major types of objects – carnivores (meat-eaters), herbivores (plant-eaters) and plants
+*	carnivores can eat herbivores and other carnivores
+   *	herbivores can eat plants
+*	Objects can go anywhere if they support the "go" command
+   *	Only one object can move at a time
+   *	When one object moves, all objects (including the moving one) get "updated" with the time required for the moving object to travel (the time is determined by the Manhattan distance between the start and end positions).
+   *	When the moved object gets to a position where other objects are located, it "encounters" all of them – it tries to eat them, according to the rules above
+*	Objects can sleep
+*	Some objects change their size when eating or sleeping
 The following lines will help you better understand the API.
-Important Classes and Interfaces
+### Important Classes and Interfaces
 These are the API’s interfaces:
-    *	IOrganism – provides base properties and methods, supported by all organisms – IsAlive, Location, Size
-    *	IHerbivore – represents a plant-eater and provides a method EatPlant(Plant), which is called when the object encounters other objects. Eating a plant could reduce its size or kill it. Note: The proper way to implement the EatPlant method is to call the passed plant's GetEatenQuantity(int). EatPlant must also return the eaten quantity.
+*	;'IOrganism – provides base properties and methods, supported by all organisms – IsAlive, Location, Size
+*	IHerbivore – represents a plant-eater and provides a method EatPlant(Plant), which is called when the object encounters other objects. Eating a plant could reduce its size or kill it. Note: The proper way to implement the EatPlant method is to call the passed plant's GetEatenQuantity(int). EatPlant must also return the eaten quantity.
 •	ICarnivore – represents a meat-eater and provides a method TryEatAnimal(Animal), which is called when the object encounters other objects. The carnivore could fail in eating the animal, but if it succeeds, the animal dies. Note: The proper way to implement the TryEatAnimal method is to call the passed animal's GetMeatFromKillQuantity(). The TryEatAnimal method must return the quantity of meat eaten.
 These are the API’s classes and structures:
 •	Point – struct, represents a two-dimensional point with integer coordinates and provides a Parse(string) and overloaded ToString() method, along with a GetManhattanDistance(Point, Point) static method
