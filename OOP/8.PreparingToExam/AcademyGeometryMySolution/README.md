@@ -89,7 +89,7 @@ Note: all numbers and coordinates can be floating-point numbers. Using a 64-bit 
 Output
 Not all commands require output – for example translate, rotate, scale and creation of figures do not print anything on the console. Other commands require output in the form of either a number or a vertex. Commands that require printing a number must just print a number on a new line. Commands that print a vertex must print the vertex through its ToString() method on a new line.
 
-Example
+### Example
 
 <table>
     <tr>
