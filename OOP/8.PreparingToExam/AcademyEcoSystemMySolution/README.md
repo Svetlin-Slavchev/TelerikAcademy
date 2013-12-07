@@ -17,22 +17,22 @@ The following lines will help you better understand the API.
 ### Important Classes and Interfaces
 
 These are the API’s interfaces:
-* 'IOrganism' – provides base properties and methods, supported by all organisms – IsAlive, Location, Size
-*	'IHerbivore' – represents a plant-eater and provides a method EatPlant(Plant), which is called when the object encounters other objects. Eating a plant could reduce its size or kill it. Note: The proper way to implement the EatPlant method is to call the passed plant's GetEatenQuantity(int). EatPlant must also return the eaten quantity.
-*	'ICarnivore' – represents a meat-eater and provides a method TryEatAnimal(Animal), which is called when the object encounters other objects. The carnivore could fail in eating the animal, but if it succeeds, the animal dies. Note: The proper way to implement the TryEatAnimal method is to call the passed animal's GetMeatFromKillQuantity(). The TryEatAnimal method must return the quantity of meat eaten.
+* **IOrganism8** – provides base properties and methods, supported by all organisms – IsAlive, Location, Size
+*	**IHerbivore** – represents a plant-eater and provides a method EatPlant(Plant), which is called when the object encounters other objects. Eating a plant could reduce its size or kill it. Note: The proper way to implement the EatPlant method is to call the passed plant's GetEatenQuantity(int). EatPlant must also return the eaten quantity.
+*	**ICarnivore** – represents a meat-eater and provides a method TryEatAnimal(Animal), which is called when the object encounters other objects. The carnivore could fail in eating the animal, but if it succeeds, the animal dies. Note: The proper way to implement the TryEatAnimal method is to call the passed animal's GetMeatFromKillQuantity(). The TryEatAnimal method must return the quantity of meat eaten.
 These are the API’s classes and structures:
-*	'Point' – struct, represents a two-dimensional point with integer coordinates and provides a Parse(string) and overloaded ToString() method, along with a GetManhattanDistance(Point, Point) static method
-*	'Organism' – abstract implementation of the IOrganism interface. Has an overloaded ToString() method
-*	'Animal' – abstract base for all animals (organisms which can move), which can execute "go" and "sleep" commands. Provides the respective GoTo(Point) and Sleep(int) commands. Also provides an implementation of the GetMeatFromKillQuantity() method, which kills the animal and returns its meat value. Also has a State property, indicating whether the animal is sleeping or awake. Has a Name and an overloaded ToString() method
-*	'Plant' – abstract base for organisms that never change their position. Has a GetEatenQuantity(int) method, which takes a "bite size" and reduces the size of the plant by that bite size (if the plant is bigger), or kills the plant and sets its size to 0, if the bite is larger than the plant's size. The method returns the change in size of the plant (i.e. the "eaten" quantity). Has an overloaded ToString() method
-*	'Tree' and 'Bush' – plants with a predefined size 
-*	'Deer' – animal class, implementation of the IHerbivore interface. Does not change in any way when eating.
-*	'Engine' – handles commands and executes them on the simulation world, keeps several lists of the objects in it, provides methods for adding objects and removes dead objects after each "go" command
+*	**Point** – struct, represents a two-dimensional point with integer coordinates and provides a Parse(string) and overloaded ToString() method, along with a GetManhattanDistance(Point, Point) static method
+*	**Organism** – abstract implementation of the IOrganism interface. Has an overloaded ToString() method
+*	**Animal** – abstract base for all animals (organisms which can move), which can execute "go" and "sleep" commands. Provides the respective GoTo(Point) and Sleep(int) commands. Also provides an implementation of the GetMeatFromKillQuantity() method, which kills the animal and returns its meat value. Also has a State property, indicating whether the animal is sleeping or awake. Has a Name and an overloaded ToString() method
+*	**Plant** – abstract base for organisms that never change their position. Has a GetEatenQuantity(int) method, which takes a "bite size" and reduces the size of the plant by that bite size (if the plant is bigger), or kills the plant and sets its size to 0, if the bite is larger than the plant's size. The method returns the change in size of the plant (i.e. the "eaten" quantity). Has an overloaded ToString() method
+*	**Tree** and 'Bush' – plants with a predefined size 
+*	**Deer** – animal class, implementation of the IHerbivore interface. Does not change in any way when eating.
+*	**Engine** – handles commands and executes them on the simulation world, keeps several lists of the objects in it, provides methods for adding objects and removes dead objects after each "go" command
 
 ### Commands
 
 There are two types of commands the Engine supports:	
-*	Organism 'birth' command – creates an object in the world
+*	Organism **birth** command – creates an object in the world
    *	Format: birth <object-type-name> <object-parameters…>
    *	Example: birth tree (0,0) – creates a tree at the position (0, 0)
    *	Example: birth deer Rudolf (0,0) – creates a deer with the name Rudolf at position (0,0)
