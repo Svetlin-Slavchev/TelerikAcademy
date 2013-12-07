@@ -1,2 +1,2 @@
-TelerikAcademyHomeWorks
+Some  tasks from past exams
 =======================
