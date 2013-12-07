@@ -3,10 +3,10 @@ Problem 2 – Ecosystem Simulation API
 You are given an ecosystem simulation API that gives the base for creating organisms, moving organisms and handling encounters between organisms. The API includes an engine, which controls the simulation world and executes commands on the objects within it. You are also given a C# file, which has a Main method and uses the API for processing commands from the input.
 There are some simple rules the simulation API supports:
 *	Objects can be created anywhere
-*	There are 3 major types of objects – carnivores (meat-eaters), herbivores (plant-eaters) and plants
+*	There are 3 major types of objects – **carnivores** (meat-eaters), **herbivores** (plant-eaters) and **plants**
 *	carnivores can eat herbivores and other carnivores
    *	herbivores can eat plants
-*	Objects can go anywhere if they support the "go" command
+*	Objects can go anywhere if they support the "**go**" command
    *	Only one object can move at a time
    *	When one object moves, all objects (including the moving one) get "updated" with the time required for the moving object to travel (the time is determined by the Manhattan distance between the start and end positions).
    *	When the moved object gets to a position where other objects are located, it "encounters" all of them – it tries to eat them, according to the rules above
@@ -25,7 +25,7 @@ These are the API’s classes and structures:
 *	**Organism** – abstract implementation of the IOrganism interface. Has an overloaded ToString() method
 *	**Animal** – abstract base for all animals (organisms which can move), which can execute "go" and "sleep" commands. Provides the respective GoTo(Point) and Sleep(int) commands. Also provides an implementation of the GetMeatFromKillQuantity() method, which kills the animal and returns its meat value. Also has a State property, indicating whether the animal is sleeping or awake. Has a Name and an overloaded ToString() method
 *	**Plant** – abstract base for organisms that never change their position. Has a GetEatenQuantity(int) method, which takes a "bite size" and reduces the size of the plant by that bite size (if the plant is bigger), or kills the plant and sets its size to 0, if the bite is larger than the plant's size. The method returns the change in size of the plant (i.e. the "eaten" quantity). Has an overloaded ToString() method
-*	**Tree** and 'Bush' – plants with a predefined size 
+*	**Tree** and **Bush** – plants with a predefined size 
 *	**Deer** – animal class, implementation of the IHerbivore interface. Does not change in any way when eating.
 *	**Engine** – handles commands and executes them on the simulation world, keeps several lists of the objects in it, provides methods for adding objects and removes dead objects after each "go" command
 
@@ -45,7 +45,7 @@ There are two types of commands the Engine supports:
    *	Example: **go Rudolf (5,5)** – sends the animal with the name Rudolf to position (5,5), updates all objects with the elapsed time and checks for possible encounters with other organisms
 Here is a list of all commands the Engine supports currently:
 *	**birth tree <position>** - creates a tree at the specified coordinates
-*	*birth bush <position>** - creates a bush at the specified coordinates
+*	**birth bush <position>** - creates a bush at the specified coordinates
 *	**birth deer <name> <coordinates>** - creates a deer with the specified name at the specified coordinates
 *	**sleep <name> <time>** - puts the animal with the specified name to sleep for the specified time
 *	**go <name> coordinates** – moves the animal with the specified name to the specified coordinates, updates all objects with the elapsed time (calculated by Manhattan distance from the object position to the object destination) and checks for encounters
@@ -67,7 +67,7 @@ You are tasked with extending the API by implementing several commands and objec
    *	Format: **birth boar <name> <position>** - creates a boar at the specified position, with the specified name
    *	Example: **birth boar Gruhcho (7,-3)** – creates a boar at the coordinates (7,-3), with the name Gruhcho
 *	Implement a command to create a Zombie. The Zombie should be an animal and should not be able to eat. When a carnivore (of the so-far existing) tries to eat a Zombie, it should always succeed and receive 10 meat from the Zombie. However, the Zombie should never die. 
-   *	Format: 8*birth zombie <name> <position>** - creates a zombie with the specified name at the specified position
+   *	Format: **birth zombie <name> <position>** - creates a zombie with the specified name at the specified position
    *	Example: **birth zombie Joro (0,0)** – creates a zombie named Joro at the coordinates (0,0)
 
 ### Input and Output Data
