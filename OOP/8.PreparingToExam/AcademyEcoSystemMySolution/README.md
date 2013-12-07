@@ -33,22 +33,22 @@ These are the API’s classes and structures:
 
 There are two types of commands the Engine supports:	
 *	Organism **birth** command – creates an object in the world
-   *	Format: birth <object-type-name> <object-parameters…>
-   *	Example: birth tree (0,0) – creates a tree at the position (0, 0)
-   *	Example: birth deer Rudolf (0,0) – creates a deer with the name Rudolf at position (0,0)
+   *	Format: **birth <object-type-name> <object-parameters…>**
+   *	Example: **birth tree (0,0)** – creates a tree at the position (0, 0)
+   *	Example: **birth deer Rudolf (0,0)** – creates a deer with the name Rudolf at position (0,0)
 *	Object instance command – orders an object to execute a command. If the object executes the command, a string is printed.
-   *	Format: <command-name> <object-name> <command-parameters>
+   *	Format: **<command-name> <object-name> <command-parameters>**
    *	Commands:
-      *	sleep <object-name> <time>
-      *	go <object-name> <position> 
-   *	Example: sleep Rudolf 10 – puts the animal with the name Rudolf to sleep for 10 time units
-   *	Example: go Rudolf (5,5) – sends the animal with the name Rudolf to position (5,5), updates all objects with the elapsed time and checks for possible encounters with other organisms
+      *	**sleep <object-name> <time>**
+      *	**go <object-name> <position>** 
+   *	Example: **sleep Rudolf 10** – puts the animal with the name Rudolf to sleep for 10 time units
+   *	Example: **go Rudolf (5,5)** – sends the animal with the name Rudolf to position (5,5), updates all objects with the elapsed time and checks for possible encounters with other organisms
 Here is a list of all commands the Engine supports currently:
-*	birth tree <position> - creates a tree at the specified coordinates
-*	birth bush <position> - creates a bush at the specified coordinates
-*	birth deer <name> <coordinates> - creates a deer with the specified name at the specified coordinates
-*	sleep <name> <time> - puts the animal with the specified name to sleep for the specified time
-*	go <name> coordinates – moves the animal with the specified name to the specified coordinates, updates all objects with the elapsed time (calculated by Manhattan distance from the object position to the object destination) and checks for encounters
+*	**birth tree <position>** - creates a tree at the specified coordinates
+*	*birth bush <position>** - creates a bush at the specified coordinates
+*	**birth deer <name> <coordinates>** - creates a deer with the specified name at the specified coordinates
+*	**sleep <name> <time>** - puts the animal with the specified name to sleep for the specified time
+*	**go <name> coordinates** – moves the animal with the specified name to the specified coordinates, updates all objects with the elapsed time (calculated by Manhattan distance from the object position to the object destination) and checks for encounters
 The Engine handles all listed commands and you shouldn’t write your own parsing code for these commands.
 Study the aforementioned classes to get a better understanding of how they work and how the Engine class handles the listed commands.
 
@@ -56,19 +56,19 @@ Study the aforementioned classes to get a better understanding of how they work 
 
 You are tasked with extending the API by implementing several commands and object types. You are not allowed to edit any existing class from the original code of the API. You are not allowed to edit the Main method. You are allowed to edit the GetEngineInstance() method.
 *	Implement a command to create a Wolf. The Wolf should be an animal and should have a Size of 4. The Wolf should be able to eat any animal smaller than or as big as him, or any animal which is sleeping.
-   *	Format: birth wolf <name> <position> - creates a Wolf at the specified position with the specified name
-   *	Example: birth wolf Joro (1,1) – creates a Wolf with the name Joro, at coordinates (1, 1)
+   *	Format: **birth wolf <name> <position>** - creates a Wolf at the specified position with the specified name
+   *	Example: **birth wolf Joro (1,1)** – creates a Wolf with the name Joro, at coordinates (1, 1)
 *	Implement a command to create a Lion. The Lion should be an animal and should have a Size of 6. The Lion should be able to eat any animal, which is at most twice larger than him (inclusive). Also, the Lion should grow by 1 with each animal it eats.
-o	Format: birth lion <name> <position> - creates a Lion at the specified position with the specified name
+   *	Format: **birth lion <name> <position>** - creates a Lion at the specified position with the specified name
 *	Implement a command to create Grass. The Grass should be a plant and should have a Size of 2. The Grass should grow by 1 at each time unit (i.e. by as much as the timeElapsed parameter is in the Update method), if it IsAlive.
-   *	Format: birth grass <position> - creates grass at the specified position
-   * Example: birth grass (1,2) – creates grass at coordinates (1,2)
+   *  Format: **birth grass <position>** - creates grass at the specified position
+   *  Example: **birth grass (1,2)** – creates grass at coordinates (1,2)
 *	Implement a command to create a Boar. The Boar should be an animal and should have a Size of 4. The Boar should be able to eat any animal, which is smaller than him or as big as him. The Boar should be able to eat from any plant. The Boar always has a bite size of 2. When eating from a plant, the Boar increases its size by 1.
-   *	Format: birth boar <name> <position> - creates a boar at the specified position, with the specified name
-   *	Example: birth boar Gruhcho (7,-3) – creates a boar at the coordinates (7,-3), with the name Gruhcho
+   *	Format: **birth boar <name> <position>** - creates a boar at the specified position, with the specified name
+   *	Example: **birth boar Gruhcho (7,-3)** – creates a boar at the coordinates (7,-3), with the name Gruhcho
 *	Implement a command to create a Zombie. The Zombie should be an animal and should not be able to eat. When a carnivore (of the so-far existing) tries to eat a Zombie, it should always succeed and receive 10 meat from the Zombie. However, the Zombie should never die. 
-   *	Format: birth zombie <name> <position> - creates a zombie with the specified name at the specified position
-   *	Example: birth zombie Joro (0,0) – creates a zombie named Joro at the coordinates (0,0)
+   *	Format: 8*birth zombie <name> <position>** - creates a zombie with the specified name at the specified position
+   *	Example: **birth zombie Joro (0,0)** – creates a zombie named Joro at the coordinates (0,0)
 
 ### Input and Output Data
 
