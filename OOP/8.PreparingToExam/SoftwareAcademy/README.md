@@ -9,6 +9,7 @@ Your first task is to design an object-oriented class hierarchy to model the sof
 You are given few C# interfaces that you should obligatory implement and use as a basis of your code:
 
 
+```c#
 namespace SoftwareAcademy
 {
   public interface ITeacher
@@ -49,6 +50,7 @@ namespace SoftwareAcademy
     // TODO: implement the interface
   }
 }
+```
 
 
 All your courses should implement **ICourse**. Teachers should implement **ITeacher**. Local and offsite courses should implement **ILocalCourse** and **IOffsiteCourse respectively**. Courses and teachers should be created only through the **ICourseFactory** interface implemented by a class named **CourseFactory**.
