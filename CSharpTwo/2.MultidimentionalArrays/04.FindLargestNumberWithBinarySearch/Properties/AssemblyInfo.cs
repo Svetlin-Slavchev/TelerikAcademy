@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("14.MethodsToCalculate")]
+[assembly: AssemblyTitle("04.FindLargestNumberWithBinarySearch")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("14.MethodsToCalculate")]
+[assembly: AssemblyProduct("04.FindLargestNumberWithBinarySearch")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ffeafa11-0aca-41e0-9466-b68c6fa3d873")]
+[assembly: Guid("0003ad70-5af9-43ba-8657-4301d734a844")]
 
 // Version information for an assembly consists of the following four values:
 //

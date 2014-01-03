@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4E7998F-D614-493D-BF75-95B6D42E1920}</ProjectGuid>
+    <ProjectGuid>{55CA79D0-7D14-49F1-A09E-BCF7A871A051}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_10.CalculateFactoriel</RootNamespace>
-    <AssemblyName>10.CalculateFactoriel</AssemblyName>
+    <RootNamespace>_12.SubtractionAndMultiplicationOfPolynomials</RootNamespace>
+    <AssemblyName>12.SubtractionAndMultiplicationOfPolynomials</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,7 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\11.AddsTwoPolynomials\11.AddsTwoPolynomials.csproj">
+      <Project>{6bea079d-b4a6-4714-9379-962bfd49265f}</Project>
+      <Name>11.AddsTwoPolynomials</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
