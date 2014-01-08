@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("04.CompareTwoTextFiles")]
+[assembly: AssemblyTitle("11.DeleteAllWordsStartWithTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("04.CompareTwoTextFiles")]
+[assembly: AssemblyProduct("11.DeleteAllWordsStartWithTest")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e48487db-7512-4a26-9983-366cd75dd2d4")]
+[assembly: Guid("d21cc5f8-1f12-4972-8f2c-aea19ee8d1af")]
 
 // Version information for an assembly consists of the following four values:
 //

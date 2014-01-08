@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D010F53-54D1-4986-AD66-E17ADA6180B9}</ProjectGuid>
+    <ProjectGuid>{9D36545F-5EBF-459B-A7F5-27874F97B988}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_09.DeleteAllOddLines</RootNamespace>
-    <AssemblyName>09.DeleteAllOddLines</AssemblyName>
+    <RootNamespace>_11.DeleteAllWordsStartWithTest</RootNamespace>
+    <AssemblyName>11.DeleteAllWordsStartWithTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,12 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\03.InsertLinesAndWriteFileToAnother\03.InsertLinesAndWriteFileToAnother.csproj">
-      <Project>{0664a6b3-6631-446e-9e73-b9f054b1e629}</Project>
-      <Name>03.InsertLinesAndWriteFileToAnother</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
