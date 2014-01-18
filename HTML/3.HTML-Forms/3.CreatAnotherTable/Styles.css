@@ -1,0 +1,23 @@
+﻿body {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid #D0D7E5;
+}
+
+table tr th {
+    border: 1px solid #A4ABB2;
+    text-align: left;
+    padding: 5px;
+}
+
+#thead, #tfoot {
+    text-align: left;
+    background-color: silver;
+}
