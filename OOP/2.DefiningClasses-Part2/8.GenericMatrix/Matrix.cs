@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace MatrixDefinition
-{
-    // Tassk 8
-    // Define a class Matrix<T> to hold a matrix of numbers (e.g. integers, floats, decimals). 
+// Tassk 8
+// Define a class Matrix<T> to hold a matrix of numbers (e.g. integers, floats, decimals).
 
+namespace _8.GenericMatrix
+{
     public class Matrix<T> where T : System.IComparable, System.IFormattable, System.IConvertible, System.IComparable<int>, System.IEquatable<int>
     {
         private const int dimension = 4;
@@ -17,8 +17,31 @@ namespace MatrixDefinition
             this.Colls = colls;
         }
 
-        public int Rows { get; set; }
-        public int Colls { get; set; }
+        public int Rows
+        {
+            get { return Rows; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new FormatException("The row must be positive a number!");
+                }
+                Rows = value;
+            }
+        }
+
+         public int Colls
+        {
+            get { return Colls; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new FormatException("The coll must be positive a number!");
+                }
+                Colls = value;
+            }
+        }
 
         // Task 9
         // Implement an indexer this[row, col] to access the inner matrix cells.

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace  Attributes
+namespace _11.VersionAttribute
 {
-    [Version("1.0")] // Attribute 
+    [Version("1.0")] // Attribute
     public class Program
     {
         static void Main(string[] args)

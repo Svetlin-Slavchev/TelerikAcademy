@@ -5,12 +5,12 @@
 // and holds a version in the format major.minor (e.g. 2.11).
 // Apply the version attribute to a sample class and display its version at runtime.
 
-namespace  Attributes
+namespace _11.VersionAttribute
 {
     [AttributeUsage(AttributeTargets.Struct | AttributeTargets.Class | AttributeTargets.Interface
-        | AttributeTargets.Enum | AttributeTargets.Method,
-        AllowMultiple = true)]
-     public class VersionAttribute : System.Attribute
+    | AttributeTargets.Enum | AttributeTargets.Method,
+    AllowMultiple = true)]
+    public class VersionAttribute : System.Attribute
     {
         public string Version { get; set; }
 
