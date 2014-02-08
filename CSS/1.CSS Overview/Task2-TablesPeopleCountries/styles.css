@@ -1,0 +1,31 @@
+﻿body {
+    background-color: sienna;
+    font: 10px arial;
+}
+
+table {
+    border: 1px solid;
+}
+
+td {
+    border-left: 1px solid;
+    text-align: left;
+    color: black;
+    width: 170px;
+    margin-left: auto;
+}
+
+thead tr td {
+    font: 10px arial;
+    background-color: #00CC00;
+    color: white;
+    border-left: 1px solid #000000;
+}
+
+#white {
+    background-color: white;
+}
+
+#silver {
+    background-color: #E5E5DD;
+}

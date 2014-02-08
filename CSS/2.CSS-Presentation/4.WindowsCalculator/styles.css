@@ -1,0 +1,178 @@
+﻿body {
+    font-family: Calibri;
+}
+
+table {
+    border: 10px solid #ccbd14;
+    border-top: 2px;
+}
+
+    table nav {
+    }
+
+        table nav img {
+            float: left;
+        }
+
+        table nav #secondImg {
+            float: right;
+            margin-top: -5px;
+        }
+
+        table nav div {
+        }
+
+    table thead tr td {
+        background-color: #ccbd14;
+        width: 405px;
+        height: 30px;
+        text-align: center;
+    }
+
+    table tbody tr.VEH td {
+        background: rgba(242,246,248,1);
+        background: -moz-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(220,228,234,1) 27%, rgba(216,225,231,1) 32%, rgba(181,198,208,1) 98%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(27%, rgba(220,228,234,1)), color-stop(32%, rgba(216,225,231,1)), color-stop(98%, rgba(181,198,208,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(220,228,234,1) 27%, rgba(216,225,231,1) 32%, rgba(181,198,208,1) 98%);
+        background: -o-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(220,228,234,1) 27%, rgba(216,225,231,1) 32%, rgba(181,198,208,1) 98%);
+        background: -ms-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(220,228,234,1) 27%, rgba(216,225,231,1) 32%, rgba(181,198,208,1) 98%);
+        background: linear-gradient(135deg, rgba(242,246,248,1) 0%, rgba(220,228,234,1) 27%, rgba(216,225,231,1) 32%, rgba(181,198,208,1) 98%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#b5c6d0', GradientType=1 );
+    }
+
+    table table {
+        border: 1px solid black;
+    }
+
+        table table tr.VEH td {
+            text-align: left;
+            font-size: 13px;
+            height: 23px;
+            vertical-align: top;
+        }
+
+        table table tr td.result {
+            border: 1px solid black;
+            text-align: right;
+            height: 46px;
+            background: rgba(255,255,255,1);
+            background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(13%, rgba(247,248,248,1)), color-stop(34%, rgba(247,248,248,1)), color-stop(64%, rgba(212,222,227,1)), color-stop(71%, rgba(212,222,227,1)));
+            background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+            background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+            background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+            background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4dee3', GradientType=1 );
+        }
+
+        table table tr td {
+            width: 395px;
+            font-size: 25px;
+            background-color: #d4dee3;
+        }
+
+        table table table.table1 {
+            height: 60px;
+        }
+
+            table table table.table1 tr td {
+                font-size: 12px;
+                padding-left: 13px;
+            }
+
+            table table table.table1 tr #padtop {
+                padding-top: 2px;
+            }
+
+            table table table.table1 tr #textleft {
+                font-size: 12px;
+                text-align: right;
+                padding-right: 14px;
+                padding-bottom: 2px;
+            }
+
+        table table table.table2 {
+            height: 200px;
+            width: 400px;
+        }
+
+            table table table.table2 tr td.td, #lt, #ms {
+                width: 10%;
+            }
+
+            table table table.table2 tr td.td {
+                font-size: 15px;
+                text-align: center;
+                border: 1px solid #808080;
+                border-radius: 2px;
+            }
+
+            table table table.table2 tr td.tdd {
+                font-size: 15px;
+                text-align: center;
+                border: 1px solid #808080;
+                border-radius: 2px;
+            }
+
+            table table table.table2 tr td.td2 {
+                font-size: 15px;
+                text-align: center;
+                border: 1px solid #808080;
+                border-radius: 2px;
+            }
+
+            table table table.table2 tr #lt {
+                font-size: 13px;
+                border: 1px solid #808080;
+                border-radius: 2px;
+                text-align: center;
+                background: rgba(255,255,255,1);
+                background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(13%, rgba(247,248,248,1)), color-stop(34%, rgba(247,248,248,1)), color-stop(64%, rgba(212,222,227,1)), color-stop(71%, rgba(212,222,227,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4dee3', GradientType=1 );
+            }
+
+            table table table.table2 tr #ms {
+                font-size: 12px;
+                border: 1px solid #808080;
+                border-radius: 2px;
+                text-align: center;
+            }
+
+            table table table.table2 tr td.jm, td.td2 {
+                background: rgba(255,255,255,1);
+                background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(13%, rgba(247,248,248,1)), color-stop(34%, rgba(247,248,248,1)), color-stop(64%, rgba(212,222,227,1)), color-stop(71%, rgba(212,222,227,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 13%, rgba(247,248,248,1) 34%, rgba(212,222,227,1) 64%, rgba(212,222,227,1) 71%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4dee3', GradientType=1 );
+            }
+
+            table table table.table2 tr td.td, #td {
+                background: rgba(255,255,255,1);
+                background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 26%, rgba(247,248,248,1) 58%, rgba(212,222,227,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(26%, rgba(247,248,248,1)), color-stop(58%, rgba(247,248,248,1)), color-stop(100%, rgba(212,222,227,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 26%, rgba(247,248,248,1) 58%, rgba(212,222,227,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 26%, rgba(247,248,248,1) 58%, rgba(212,222,227,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 26%, rgba(247,248,248,1) 58%, rgba(212,222,227,1) 100%);
+                background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,248,248,1) 26%, rgba(247,248,248,1) 58%, rgba(212,222,227,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4dee3', GradientType=1 );
+            }
+
+            table table table.table2 tr td.radio {
+                border: 1px solid;
+                font-size: 13px;
+                border: 1px solid #808080;
+                border-radius: 2px;
+                width: 18%;
+            }
+
+            table table table.table2 a {
+                font-size: 10px;
+            }
