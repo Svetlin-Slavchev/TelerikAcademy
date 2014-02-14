@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Write a function that removes all elements with a given value-->
+    <script>
+        var arr = [1, 2, 1, 4, 1, 3, 4, 1, 111, 3, 2, 1, "1"];
+
+        // attach method
+        Array.prototype.remove = function (value) {
+            var a = this.indexOf(value);
+
+            if (this.indexOf(value) !== -1) {
+                // remove value until it no longer repeats
+                while (true) {
+                    this.splice(this.indexOf(value), 1);
+                    a = this.indexOf(value, value + 1);
+                    if (a === -1) {
+                        break;
+                    }
+                }
+                return true;
+
+            } else {
+
+                return false;
+            };
+        }
+
+        // test method
+        arr.remove(1);
+
+        //print result
+        for (var i = 0; i < arr.length; i++) {
+            jsConsole.write(arr[i] + " ");
+        }
+    </script>
+</body>
+</html>
+

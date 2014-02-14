@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Write a function that checks if a given object contains a given property-->
+    <script>
+        var someObj = "jm";
+
+        jsConsole.writeLine(hasProperty(someObj, "del"));
+        jsConsole.writeLine(hasProperty(someObj, "length"));
+        jsConsole.writeLine(someObj.length);
+
+        function hasProperty(object, property) {
+            return object.hasOwnProperty(property);
+        }
+    </script>
+</body>
+</html>
