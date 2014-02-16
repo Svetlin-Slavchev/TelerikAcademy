@@ -1,0 +1,159 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "1.Menu", "http://localhost:43276", "{19A6F2D3-74A0-4B70-8AB8-78531435C56C}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_43276"
+		Debug.AspNetCompiler.PhysicalPath = "1.Menu\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43276\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_43276"
+		Release.AspNetCompiler.PhysicalPath = "1.Menu\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43276\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "1.Menu\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "2.MusicPage", "http://localhost:43411", "{AE3E34D3-5AAC-4FD4-AF08-B556E6856D3E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_43411"
+		Debug.AspNetCompiler.PhysicalPath = "2.MusicPage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43411\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_43411"
+		Release.AspNetCompiler.PhysicalPath = "2.MusicPage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43411\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "2.MusicPage\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "3.Total managment", "http://localhost:50549", "{9AAFEEBE-1882-4FA4-997D-993CDA8AEA8E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50549"
+		Debug.AspNetCompiler.PhysicalPath = "3.Total managment\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50549\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50549"
+		Release.AspNetCompiler.PhysicalPath = "3.Total managment\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50549\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "3.Total managment\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "4.Web site", "http://localhost:60333", "{05C40966-5D53-477C-A17A-75EE0E53E022}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60333"
+		Debug.AspNetCompiler.PhysicalPath = "4.Web site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60333\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60333"
+		Release.AspNetCompiler.PhysicalPath = "4.Web site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60333\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "4.Web site\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "5.Web page without table", "http://localhost:10744", "{E27E4356-0B73-4950-B9DB-464B2A195CBB}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_10744"
+		Debug.AspNetCompiler.PhysicalPath = "5.Web page without table\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10744\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_10744"
+		Release.AspNetCompiler.PhysicalPath = "5.Web page without table\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10744\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "5.Web page without table\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "6.Newsletter", "http://localhost:14873", "{C976925C-308C-4568-B653-E914A620C50C}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_14873"
+		Debug.AspNetCompiler.PhysicalPath = "6.Newsletter\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14873\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_14873"
+		Release.AspNetCompiler.PhysicalPath = "6.Newsletter\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14873\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "6.Newsletter\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A6F2D3-74A0-4B70-8AB8-78531435C56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A6F2D3-74A0-4B70-8AB8-78531435C56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3E34D3-5AAC-4FD4-AF08-B556E6856D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3E34D3-5AAC-4FD4-AF08-B556E6856D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AAFEEBE-1882-4FA4-997D-993CDA8AEA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AAFEEBE-1882-4FA4-997D-993CDA8AEA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C40966-5D53-477C-A17A-75EE0E53E022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C40966-5D53-477C-A17A-75EE0E53E022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27E4356-0B73-4950-B9DB-464B2A195CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27E4356-0B73-4950-B9DB-464B2A195CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C976925C-308C-4568-B653-E914A620C50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C976925C-308C-4568-B653-E914A620C50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

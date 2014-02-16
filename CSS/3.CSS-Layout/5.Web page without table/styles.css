@@ -1,0 +1,110 @@
+﻿body {
+    width: 800px;
+}
+
+    body div.mainHeader {
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+        body div.mainHeader ul.header li {
+            display: inline-block;
+        }
+
+            body div.mainHeader ul.header li a {
+                font-size: 30px;
+            }
+
+    body div.mainLeft {
+        margin-top: 10px;
+        border: 1px solid black;
+        height: 530px;
+    }
+
+        body div.mainLeft div.d1 {
+            float: left;
+            padding-top: 10px;
+        }
+
+        body div.mainLeft div img {
+            width: 100px;
+        }
+
+        body div.mainLeft div p {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        body div.mainLeft div ul {
+            float: right;
+            margin-top: 30px;
+            margin-right: 7px;
+        }
+
+            body div.mainLeft div ul li {
+                list-style: none;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+        body div.mainLeft #a {
+            position: absolute;
+            left: 15px;
+            top:85px;
+            width: 230px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        body div.mainLeft #b {
+            position: absolute;
+            left: 280px;
+            top:85px;
+            width: 230px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        body div.mainLeft #c {
+            position: absolute;
+            left: 15px;
+            top:260px;
+            width: 230px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        body div.mainLeft #d {
+            position: absolute;
+            left: 280px;
+            top:260px;
+            width: 230px;
+            height: 150px;
+            border: 1px solid black;
+        }
+        body div.mainLeft #e {
+            position: absolute;
+            left: 15px;
+            top:435px;
+            width: 230px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        body div.mainLeft #f {
+            position: absolute;
+            left: 280px;
+            top:435px;
+            width: 230px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        body div.mainRight {
+            clear:both;
+            position:absolute;
+            left:550px;
+            top:130px;
+            padding:40px;
+            font-size:20px;
+        }

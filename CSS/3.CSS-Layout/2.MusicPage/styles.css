@@ -1,0 +1,58 @@
+﻿body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #b9b3b3;
+}
+
+    body header h1 {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-family: Andalus;
+    }
+
+    body section table {
+        border: 1px solid black;
+        background-color: #f8f1f1;
+        width: 600px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+        body section table img {
+            padding: 15px;
+        }
+
+        body section table tr td.trtd2 {
+            vertical-align: top;
+            padding-top: 15px;
+        }
+
+        body section table tr td.tr2td2 {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+            body section table tr td.tr2td2 input {
+                padding-top: 10px;
+                padding-bottom: 11px;
+                color: white;
+                margin-bottom: 5px;
+            }
+
+                body section table tr td.tr2td2 input.firstButton {
+                    width: 120px;
+                    background-image: url(images/r.jpg);
+                }
+
+                body section table tr td.tr2td2 input.secondButton {
+                    width: 100px;
+                    background-image: url(images/r.jpg);
+                }
+
+    body table.table3 {
+        margin-bottom: 30px;
+    }
