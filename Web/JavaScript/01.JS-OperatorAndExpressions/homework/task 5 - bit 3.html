@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Write a boolean expression for finding if the bit 3 (counting from 0) of a given integer is 1 or 0.-->
+    <script>
+        var number = 12;
+        var position = 3;
+
+        // mask
+        var mask = 1 << position;
+        // int nAndMask = n & mask;        // int bit = nAndMask >> p;
+        var bit = (number & mask) >> position;
+
+        jsConsole.writeLine(number.toString(2));
+        jsConsole.writeLine(bit);
+
+        // reverse number
+        var reverse = number.toString(2).split("").reverse().join("");
+        jsConsole.writeLine(reverse);
+
+        if (reverse.toString().charAt(3) == 0) {
+            jsConsole.writeLine(true);
+        }
+        else {
+            jsConsole.writeLine(false);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+        #number {
+            border: 1px solid black;
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+            font-family: Consolas;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: black;
+            border: 1px solid black;
+            padding: 5px 15px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 0;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <h3>You must input 3 numbers separate by single space!</h3>
+    <label for="dig">Text: </label>
+    <input type="text" id="dig" />
+    <br />
+    <a href="#" onclick="solveQuadraticEquation()">Check the name of the digit</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Write a script that enters the coefficients a, b and c of a quadratic equation
+    a*x2 + b*x + c = 0
+    and calculates and prints its real roots. Note that quadratic equations may have 0, 1 or 2 real roots.-->
+    <script>
+        function solveQuadraticEquation() {
+            var input = jsConsole.read("#dig");
+
+            var array = input.split(" ");
+
+            var a = array[0];
+            var b = array[1];
+            var c = array[2];
+
+            // b*b - 4*a*c
+            var D = (b * b) - (4 * a * c);
+
+            // two roots
+            if (D > 0) {
+                var x1 = ((-b) + (Math.sqrt(D))) / 2 * a;
+                var x2 = ((-b) - (Math.sqrt(D))) / 2 * a;
+                jsConsole.writeLine("The real roots are:" + x1 + " and " + x2);
+            }
+            // one root
+            else if (D == 0) {
+                var x = (-b) / 2 * a;
+                jsConsole.writeLine("The real roots are: " + x);
+            }
+            // no roots
+            else if(D < 0) {
+                jsConsole.writeLine("False!");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects-->
+    <script>
+        var arr = new Array();
+        var count = 0;
+        // put all documents in array
+        for (var i in document) {
+            console.log(document[i]);
+            arr[count] = i;
+            count++;
+        }
+
+        var max = "";
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i].length > max.length) {
+                max = arr[i];
+            }
+
+        }
+        // get max lenght to compare
+        var min = max;
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i].length < min.length) {
+                min = arr[i];
+            }
+        }
+
+        jsConsole.writeLine("Largest element is " + max);
+        jsConsole.writeLine("Smallest element is " + min);
+    </script>
+</body>
+</html>

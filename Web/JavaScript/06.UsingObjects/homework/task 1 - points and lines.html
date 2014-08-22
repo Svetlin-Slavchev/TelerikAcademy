@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <!--Write functions for working with shapes in standard Planar coordinate system
+    Points are represented by coordinates P(X, Y)
+    Lines are represented by two points, marking their beginning and ending
+    L(P1(X1,Y1),P2(X2,Y2))
+    Calculate the distance between two points
+    Check if three segment lines can form a triangle-->
+    <script>
+        var point1 = buildPoint(3, 4);
+        var point2 = buildPoint(4.1, 5.5);
+        var point3 = buildPoint(1, 1);
+        var point4 = buildPoint(2, 3.2);
+        var point5 = buildPoint(3, -9);
+
+        // distance
+        jsConsole.writeLine(calculateDistance(point1, point2));
+
+        var line1 = buildLines(point1, point2);
+        var line2 = buildLines(point3, point1);
+        var line3 = buildLines(point4, point5);
+
+        // for test
+        // line 3 lenght
+        jsConsole.writeLine(line3.lineLenght());
+
+        // is this 3 lines made a triangle
+        jsConsole.writeLine(isBuildTriangle(line1, line2, line3));
+
+        // check if three lines can form a triangle
+        function isBuildTriangle(lineA, lineB, lineC) {
+            if ((lineA.lineLenght() < lineB.lineLenght() + lineC.lineLenght()) &&
+                (lineB.lineLenght() < lineA.lineLenght() + lineC.lineLenght()) &&
+                (lineC.lineLenght() < lineA.lineLenght() + lineB.lineLenght())) {
+                return true;
+            }
+            return false;
+        }
+
+        // build lines constructor
+        function buildLines(pointOne, pointTwo) {
+            return {
+                P1: pointOne,
+                P2: pointTwo,
+                toString: function showLine() {
+                    return "Line: (" + "Point1:" + this.P1 + ", " + "Point2:" + this.P2 + ")";
+                },
+                lineLenght: function calculateLineLenght() {
+                    return calculateDistance(this.P1, this.P2);
+                }
+            }
+        }
+
+        // build point constructor
+        function buildPoint(Xpoint, Ypoint) {
+            return {
+                X: Xpoint,
+                Y: Ypoint,
+                toString: function showPoint() {
+                    return "(" + this.X + " " + this.Y + ")";
+                }
+            }
+        }
+
+        // function for calculating distance between two points
+        function calculateDistance(pointOne, pointTwo) {
+            return Math.sqrt(Math.pow((pointTwo.X - pointOne.X), 2) + (Math.pow((pointTwo.Y - pointOne.Y), 2)));
+        }
+    </script>
+</body>
+</html>

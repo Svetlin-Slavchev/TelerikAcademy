@@ -1,0 +1,364 @@
+﻿body {
+    background-color: #d0cdcd;
+}
+
+    body div.main {
+        width: 100%;
+    }
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+    body div.leftMenu ul.secondUl, ul.thirdUl, ul.fourthUl, ul.fifthUl, ul.sixthUl {
+        padding-left: 5px;
+    }
+
+    body div.leftMenu a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+
+    body div.leftMenu h4 {
+        color: #ee3535;
+        font-size: 15px;
+    }
+
+    body div.leftMenu {
+        background-color: #d0cdcd;
+    }
+
+        body div.leftMenu div.header ul {
+        }
+
+            body div.leftMenu div.header ul li {
+                list-style: none;
+            }
+
+                body div.leftMenu div.header ul li img {
+                    width: 30px;
+                    float: left;
+                    margin-top: -7px;
+                }
+
+                body div.leftMenu div.header ul li h3 {
+                    font-size: 15px;
+                    margin-top: 21px;
+                }
+
+        body div.leftMenu ul.secondUl li {
+            clear: both;
+        }
+
+        body div.leftMenu ul.thirdUl {
+            padding-top: 20px;
+        }
+
+        body div.leftMenu ul.fourthUl {
+            padding-top: 20px;
+        }
+
+        body div.leftMenu ul.fifthUl {
+            padding-top: 20px;
+        }
+
+        body div.leftMenu ul.sixthUl {
+            padding-top: 20px;
+        }
+
+    body div div.leftMenu {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        background-color: #d0cdcd;
+        width: 13%;
+        height: 150%;
+    }
+
+    body div section.s1 {
+        position: absolute;
+        left: 14%;
+        top: 2%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 60%;
+        height: 135%;
+    }
+
+        body div section.s1 header {
+            height: 11%;
+            /*border-bottom: 1px solid #808080;*/
+        }
+
+            body div section.s1 header h1 {
+                width: 20%;
+                padding: 1%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+
+            body div section.s1 header button {
+                width: 20%;
+                height: 25%;
+                border: 1px solid #808080;
+                background-color: white;
+                margin-left: 1%;
+            }
+
+            body div section.s1 header hr {
+                width: 98%;
+            }
+
+        body div section.s1 article.tutorial {
+            margin-top: 1%;
+        }
+
+        body div section.s1 article h3 {
+            color: white;
+            background-color: #808080;
+            padding-left: 1%;
+            margin-left: 1%;
+            width: 97%;
+        }
+
+        body div section.s1 article a {
+            color: #ee3535;
+            padding-top: 3%;
+            padding-left: 1%;
+        }
+
+        body div section.s1 article.examples {
+            clear: both;
+        }
+            /*here*/
+            body div section.s1 article.examples p, article.refrences p, article.quiz p {
+                padding-left: 1%;
+                padding-bottom: 3%;
+                padding-top: 3%;
+            }
+
+        body div section.s1 article.tutorial img {
+            width: 20%;
+            float: left;
+            padding-right: 3%;
+            padding-left: 1%;
+        }
+
+        body div section.s1 article.tutorial p {
+            padding-top: 3%;
+            padding-right: 2%;
+        }
+
+        body div section.s1 div {
+            height: 7%;
+        }
+
+            body div section.s1 div hr {
+                width: 98%;
+            }
+
+            body div section.s1 div button {
+                width: 20%;
+                height: 45%;
+                border: 1px solid #808080;
+                background-color: white;
+                margin-left: 1%;
+                /*margin-top:1%;
+                margin-bottom:1%;*/
+            }
+
+    body div.main section.s2, section.s3, section.s4, section.s5, section.s6, section.s7, section.s8, section.s9, section.s10, section.s11, section.s12, section.s13, section.s14, section.s15 p {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+       body div.main section.s2, section.s3, section.s4, section.s5, section.s6, section.s7, section.s8, section.s9, section.s10, section.s11, section.s12, section.s13, section.s14, section.s15, a {
+            color: #ee3535;
+        }
+
+    body div section.s2 {
+        position: absolute;
+        left: 75%;
+        top: 0%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 17%;
+    }
+
+        body div section.s2 h1 {
+            color: white;
+            background-color: #808080;
+            text-align: center;
+            font-size: 90%;
+        }
+
+        body div section.s2 input {
+            width: 60%;
+            margin-left: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border: 1px solid blue;
+        }
+
+        body div section.s2 button {
+            border: 1px solid blue;
+            width: 15%;
+            border-radius: 5px;
+        }
+
+    body div section.s3 {
+        position: absolute;
+        left: 75%;
+        top: 19%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 17%;
+    }
+
+        body div section.s3 button {
+            border: 1px solid blue;
+            width: 75%;
+            height: 45%;
+            border-radius: 5px;
+            background-color: #66e6e2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+            body div section.s3 button span {
+                color: #5b9bd1;
+                font-size: 130%;
+            }
+
+    body div section.s4 {
+        position: absolute;
+        left: 75%;
+        top: 38%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 14%;
+    }
+
+        body div section.s4 h1 {
+            color: white;
+            background-color: #808080;
+            text-align: center;
+            font-size: 90%;
+        }
+
+
+    body div section.s5 {
+        position: absolute;
+        left: 75%;
+        top: 54%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 10%;
+    }
+
+    body div section.s6 {
+        position: absolute;
+        left: 75%;
+        top: 66%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 7%;
+    }
+
+    body div section.s7 {
+        position: absolute;
+        left: 75%;
+        top: 75%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 7%;
+    }
+
+    body div section.s8 {
+        position: absolute;
+        left: 75%;
+        top: 84%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }
+
+    body div section.s9 {
+        position: absolute;
+        left: 75%;
+        top: 90%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 7%;
+    }
+
+    body div section.s10 {
+        position: absolute;
+        left: 75%;
+        top: 99%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }
+
+    body div section.s11 {
+        position: absolute;
+        left: 75%;
+        top: 105%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }
+
+    body div section.s12 {
+        position: absolute;
+        left: 75%;
+        top: 111%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }
+
+    body div section.s13 {
+        position: absolute;
+        left: 75%;
+        top: 117%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }
+
+    body div section.s14 {
+        position: absolute;
+        left: 75%;
+        top: 123%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }
+
+    body div section.s15 {
+        position: absolute;
+        left: 75%;
+        top: 131%;
+        background-color: white;
+        border: 2px solid #808080;
+        width: 17%;
+        height: 4%;
+    }

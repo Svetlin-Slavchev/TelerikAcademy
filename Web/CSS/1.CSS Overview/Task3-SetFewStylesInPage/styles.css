@@ -1,0 +1,32 @@
+﻿body {
+    background-color: silver;
+}
+
+h1, a {
+    color: white;
+}
+
+.head {
+    text-align: center;
+}
+
+.foot {
+    text-align: center;
+}
+
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#a {
+    text-decoration: underline;
+}
+
+#autor {
+    color: black;
+}
+
+.current {
+    background-color: #D4D4D2;
+}

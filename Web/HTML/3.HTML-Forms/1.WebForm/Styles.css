@@ -1,0 +1,10 @@
+﻿body {
+}
+#tfoot, #button{
+    text-align: center;
+    background-color:skyblue;
+}
+
+td {
+    text-align: left;
+}

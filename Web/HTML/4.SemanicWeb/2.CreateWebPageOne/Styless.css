@@ -1,0 +1,10 @@
+﻿body {
+}
+
+header {
+    position: relative;
+}
+
+    header h1 {
+        text-align: center;
+    }
