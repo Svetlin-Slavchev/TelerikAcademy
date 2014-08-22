@@ -1,2 +1,0 @@
-Telerik Academy OOP course
-===========================
